@@ -634,7 +634,7 @@ h1, h2, h3, h4, h5,
   position: absolute;
   bottom: 0;
   right: 0;
-  top: 60%;
+  top: 55%;
   left: 26%;
   -webkit-transform: translateY(-50%) translateX(30%);
   -ms-transform: translateY(-50%) translateX(30%);
@@ -649,8 +649,8 @@ h1, h2, h3, h4, h5,
       -ms-transform: translateY(0%) translateX(0%);
       transform: translateY(0%) translateX(0%);
       margin-bottom: 30px;
-    /* margin-left: -24%;
-    margin-top: 22%; */
+     margin-left: -24%;
+    margin-top: 22%; 
    } } 
 
 .site-block-subscribe .btn {
@@ -1827,7 +1827,7 @@ h1, h2, h3, h4, h5,
   font-size: 40px;
   font-weight: 900;
   margin-bottom: 30px;
-  margin-top: -15%; }
+  margin-top: -9%; }
 
 .author-box {
   -webkit-box-shadow: 0 5px 15px -2px rgba(0, 0, 0, 0.1);

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/dashboard/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/home/6.png">
     <title>Partner Dashboard</title>
     <!-- Custom CSS -->
     <link href="assets/dashboard/extra-libs/c3/c3.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
     <link href="assets/dashboard/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="assets/dashboard/dist/css/style.css" rel="stylesheet">
-    
+
 </head>
 
 <body>
@@ -46,7 +46,7 @@
                     <div class="navbar-brand">
                         <!-- Logo icon -->
                         <a href="dashboard-partner.html">
-                            
+
                             <!--End Logo icon -->
                             <!-- Logo text -->
                             <span class="logo-text" style="font-size: 29px;
@@ -55,7 +55,7 @@
                             </span>
                         </a>
                     </div>
-                   
+
                     <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
                         data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i
@@ -67,14 +67,13 @@
                 <div class="navbar-collapse collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav float-left mr-auto ml-3 pl-1">
                     </ul>
-                   
+
                     <ul class="navbar-nav float-right">
-                        
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                                <img src="img/home/6.png" alt="user" class="rounded-circle"
-                                    width="40">
+                                <img src="img/home/6.png" alt="user" class="rounded-circle" width="40">
                                 <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span
                                         class="text-dark">Suman Ghosh</span> <i data-feather="chevron-down"
                                         class="svg-icon"></i></span>
@@ -83,10 +82,16 @@
                                 <a class="dropdown-item" href="javascript:void(0)"><i data-feather="user"
                                         class="svg-icon mr-2 ml-1"></i>
                                     My Profile</a>
-                                
+
                                 <div class="dropdown-divider"></div>
-                                <div class="pl-4 p-3"><a href="javascript:void(0)" class="btn btn-sm btn-info">View
-                                        Logout</a></div>
+                                <div class="pl-4 p-3">
+                                    <a href="home.html" class="btn btn-sm btn-info">
+                                        Logout
+                                    </a>
+                                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
+                                        data-target="#myModal">Update Details
+                                    </button>
+                                </div>
                             </div>
                         </li>
                         <!-- ============================================================== -->
@@ -96,25 +101,57 @@
                 </div>
             </nav>
         </header>
-       
+
+        <!-----modal---------->
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">Update Your Details!</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="mt-4">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="passtext" placeholder="Password">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                    value="Check me out">
+                                <label class="form-check-label" for="inlineCheckbox1">Check me out</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
+
         <aside class="left-sidebar" data-sidebarbg="skin6">
             <!-- Sidebar scroll-->
             <div class="scroll-sidebar" data-sidebarbg="skin6">
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
-                   <ul id="sidebarnav">
+                    <ul id="sidebarnav">
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="dashboard-partner.html"
-                            aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
-                                class="hide-menu">Dashboard</span></a></li>
-                    <li class="list-divider"></li>
+                                aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
+                                    class="hide-menu">Dashboard</span></a></li>
+                        <li class="list-divider"></li>
 
-                   </ul>
+                    </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
             <!-- End Sidebar scroll-->
         </aside>
-       
+
         <div class="page-wrapper">
             <!-- ============================================================== -->
             <!-- Bread crumb and right sidebar toggle -->
@@ -122,7 +159,8 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-7 align-self-center">
-                        <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Good Morning Suman!</h3>
+                        <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Farmers have some request
+                            Suman!</h3>
                         <div class="d-flex align-items-center">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb m-0 p-0">
@@ -133,80 +171,84 @@
                         </div>
                     </div>
                     <div class="col-5 align-self-center">
-                        
+
                     </div>
                 </div>
             </div>
-            
+
             <div class="container-fluid">
-               
-               <div class="row">
+
+                <div class="row">
                     <div class="card w-75">
                         <div class="card-body">
                             <h3 class="card-title">Suman</h3>
                             <p class="card-text">Rice, 20 Q for 1 month</p>
-                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
                                 data-target="#myModal">Details</button>
-                                <a href="javascript:void(0)" class="btn btn-success">Accept</a>
-                                <a href="javascript:void(0)" class="btn btn-secondary">Clear</a>
+                            <button type="button" class="btn btn-success"
+                                href="/users/delete/{{ i.id }}">Accept</button>
+                            <button type="button" class="btn btn-danger delete">Clear</button>
+
+
                         </div>
                     </div>
-               </div>
-               <div class="row">
                     <div class="card w-75">
                         <div class="card-body">
                             <h3 class="card-title">Suman</h3>
                             <p class="card-text">Rice, 20 Q for 1 month</p>
-                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
                                 data-target="#myModal">Details</button>
-                                <a href="javascript:void(0)" class="btn btn-success">Accept</a>
-                                <a href="javascript:void(0)" class="btn btn-secondary">Clear</a>
+                            <button type="button" class="btn btn-success"
+                                href="/users/delete/{{ i.id }}">Accept</button>
+                            <button type="button" class="btn btn-danger delete">Clear</button>
+
+
                         </div>
                     </div>
-               </div>
-               <div class="row">
                     <div class="card w-75">
                         <div class="card-body">
                             <h3 class="card-title">Suman</h3>
                             <p class="card-text">Rice, 20 Q for 1 month</p>
-                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
                                 data-target="#myModal">Details</button>
-                                <a href="javascript:void(0)" class="btn btn-success">Accept</a>
-                                <a href="javascript:void(0)" class="btn btn-secondary">Clear</a>
+                            <button type="button" class="btn btn-success"
+                                href="/users/delete/{{ i.id }}">Accept</button>
+                            <button type="button" class="btn btn-danger delete">Clear</button>
+
+
                         </div>
                     </div>
-               </div>
+
+
+                </div>
             </div>
-            <div id="myModal" class="modal fade" tabindex="-1" role="dialog"
-                                    aria-labelledby="myModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title" id="myModalLabel">Food and Donor Details</h4>
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-hidden="true">×</button>
-                                            </div>
-                                            <div class="modal-body">
-                                                
-                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-                                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-                                                    auctor.</p>
-                                                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                                                    cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-                                                    dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-light"
-                                                    data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Email Me</button>
-                                            </div>
-                                        </div><!-- /.modal-content -->
-                                    </div><!-- /.modal-dialog -->
-                                </div>
-           
+            <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Food and Donor Details</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        </div>
+                        <div class="modal-body">
+
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+                                auctor.</p>
+                            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+                                cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
+                                dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                            <button type="button" href="/users/email/{{i.id}}" class="btn btn-primary">Email Me</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div>
+
             <footer class="footer text-center text-muted">
-                 Developed by <a
-                    href="#">Code Warriors</a>.
+                Developed by <a href="#">Code Warriors</a>.
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
@@ -216,13 +258,13 @@
         <!-- End Page wrapper  -->
         <!-- ============================================================== -->
     </div>
-   
+
     <!-- All Jquery -->
     <!-- ============================================================== -->
     <script src="assets/dashboard/libs/jquery/dist/jquery.min.js"></script>
     <script src="assets/dashboard/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="assets/dashboard/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-   
+
     <script src="assets/dashboard/dist/js/app-style-switcher.js"></script>
     <script src="assets/dashboard/dist/js/feather.min.js"></script>
     <script src="assets/dashboard/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
@@ -237,6 +279,11 @@
     <script src="assets/dashboard/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js"></script>
     <script src="assets/dashboard/extra-libs/jvector/jquery-jvectormap-world-mill-en.js"></script>
     <script src="assets/dashboard/dist/js/pages/dashboards/dashboard1.min.js"></script>
+    <script>
+        $('.delete').on('click', function () {
+            $(this).parent().remove();
+        });
+    </script>
 </body>
 
 </html>
